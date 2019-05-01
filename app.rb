@@ -13,7 +13,8 @@ class App < Sinatra::Base
   end
 
   get '/friends' do
-    # Write your code here!
+    @friends = [1, 2, 3, 4]
 
+    erb :friends
   end
 end
